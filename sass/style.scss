@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+//*** グローバル変数 ***//
+$mainColor: #333;  // 文字色
+
+//*** mixin ***//
+@mixin flexMode($justify) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+}
+
+*    { box-sizing: border-box; }
+html { font-size: 100%; }
+body { 
+    font-family: "Circular", "-apple-system", "BlinkMacSystemFont", "Roboto", "Helvetica Neue", "sans-serif"; 
+    color: $mainColor; }
+img  { max-width: 100%; vertical-align: bottom; }
+li   { list-style: none; }
+a    { text-decoration: none; }
+/* 横幅を設定するための共通クラス */
+
+
+
+/* /ここまで共通設定 */
+
+
+
+/* レスポンシブ・ブレークポイント1127px「タブレット用」
+------------------------------- */
+
+
+
+
+/* レスポンシブ・ブレークポイント744px「スマホ用」
+------------------------------- */
+
+
+
+
+
+
+/*-------------------------------------------
+
+-------------------------------------------*/

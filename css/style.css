@@ -1,0 +1,43 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Circular", "-apple-system", "BlinkMacSystemFont", "Roboto", "Helvetica Neue", "sans-serif";
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 横幅を設定するための共通クラス */
+/* /ここまで共通設定 */
+/* レスポンシブ・ブレークポイント1127px「タブレット用」
+------------------------------- */
+/* レスポンシブ・ブレークポイント744px「スマホ用」
+------------------------------- */
+/*-------------------------------------------
+
+-------------------------------------------*/
+
+
+/* 基本スタイル */
+.responsive-text span {
+  display: inline; /* デフォルトではインライン表示 */
+}
+
