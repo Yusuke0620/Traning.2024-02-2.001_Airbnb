@@ -8,8 +8,8 @@ html {
 }
 
 body {
-  font-family: "Circular", "-apple-system", "BlinkMacSystemFont", "Roboto", "Helvetica Neue", "sans-serif";
-  color: #333;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  color: rgb(113, 113, 113);
 }
 
 img {
@@ -26,18 +26,343 @@ a {
 }
 
 /* 横幅を設定するための共通クラス */
+.container {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.container2 {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 80px;
+  background-color: #F7F7F7;
+}
+
 /* /ここまで共通設定 */
+/*-------------------------------------------
+#header
+-------------------------------------------*/
+#header {
+  background-color: #fff;
+  height: 80px;
+  color: rgb(34, 34, 34);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .header-logo a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(255, 56, 92);
+}
+#header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header nav ul li {
+  font-weight: bold;
+}
+#header nav ul a {
+  display: inline-block;
+  font-size: 1.125rem;
+  color: #fff;
+  background-color: #E01761;
+  padding: 10px 23px;
+  margin-left: 24px;
+  border-radius: 8px;
+}
+#header nav ul a #gradient-button {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+#header nav ul a .fa {
+  margin-right: 5px;
+  opacity: 1;
+}
+#header nav ul a .fa:hover {
+  opacity: 1;
+}
+
+/*-------------------------------------------
+#section-top
+-------------------------------------------*/
+#section-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 85px;
+}
+#section-top .salary, #section-top .map {
+  width: 50%;
+}
+#section-top .salary {
+  max-width: 450px;
+  margin: 0 auto;
+}
+#section-top .salary .inner {
+  text-align: center;
+}
+#section-top .salary .salary-title {
+  color: rgb(34, 34, 34);
+  font-size: 2.375rem;
+  line-height: 50px;
+}
+#section-top .salary .salary-title span:nth-of-type(1) {
+  color: rgb(255, 56, 92);
+}
+#section-top .salary .stay {
+  display: inline-block;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+#section-top .map iframe {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.sliderContainer {
+  color: rgb(34, 34, 34);
+  font-family: Arial, sans-serif;
+  /* ベースのスタイル */
+  /* スライダーのつまみ */
+  /* クリック中のつまみ拡大 */
+  /* Firefox用のスタイル */
+}
+.sliderContainer #priceText {
+  font-weight: 600;
+  font-size: 4.5rem;
+  line-height: 72px;
+  margin: 23px 0;
+}
+.sliderContainer #nightCount {
+  display: block;
+  margin-bottom: 20px;
+}
+.sliderContainer .slider {
+  width: 100%;
+}
+.sliderContainer input[type=range] {
+  -webkit-appearance: none; /* ブラウザのデフォルトのスタイルをリセット */
+  appearance: none;
+  width: 100%; /* 幅を100%に設定 */
+  height: 4px; /* スライダーの高さ */
+  background: #ddd; /* スライダーの背景色 */
+  border-radius: 5px; /* 角丸 */
+  outline: none; /* フォーカス時のアウトラインを非表示に */
+}
+.sliderContainer input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* ブラウザのデフォルトのスタイルをリセット */
+  appearance: none;
+  width: 25px; /* つまみの幅 */
+  height: 25px; /* つまみの高さ */
+  background: #222; /* つまみの背景色 */
+  border-radius: 50%; /* つまみを丸くする */
+  cursor: pointer; /* マウスを合わせた時のカーソルをポインターに */
+  transition: all 0.1s;
+}
+.sliderContainer input[type=range]::-webkit-slider-thumb:active {
+  width: 30px;
+  height: 30px;
+}
+.sliderContainer input[type=range]::-moz-range-thumb {
+  width: 25px; /* つまみの幅 */
+  height: 25px; /* つまみの高さ */
+  background: #222; /* つまみの背景色 */
+  border-radius: 50%; /* つまみを丸くする */
+  cursor: pointer; /* マウスを合わせた時のカーソルをポインターに */
+}
+
+.stay {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  border-bottom: 1px solid rgb(34, 34, 34);
+}
+.stay a {
+  color: rgb(34, 34, 34);
+}
+
+.calculation a {
+  display: inline-block;
+  color: rgb(113, 113, 113);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 11px;
+  border-bottom: 1px solid rgb(113, 113, 113);
+  margin: 31px 0 34px;
+}
+
+.searchAdress {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #DDDDDD;
+  border-radius: 50px;
+}
+.searchAdress .searchBar {
+  margin: 0 18px 0 21px;
+}
+.searchAdress .addressNumberRooms {
+  text-align: left;
+  line-height: 20px;
+  margin: 10px 0;
+}
+.searchAdress .addressNumberRooms span:nth-of-type(1) {
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+.searchAdress .addressNumberRooms span:nth-of-type(2) {
+  font-weight: 400;
+  color: rgb(113, 113, 113);
+}
+
+/*-------------------------------------------
+#section-center
+-------------------------------------------*/
+#section-center {
+  margin-top: 130px;
+}
+#section-center h2 {
+  font-size: 3rem;
+  line-height: 54px;
+  color: rgb(34, 34, 34);
+  text-align: center;
+}
+#section-center img {
+  margin-top: 37px;
+}
+#section-center .section-center-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+#section-center .section-center-items .section-center-item {
+  width: 31%;
+}
+#section-center .section-center-items .section-center-item .responsive-text {
+  font-size: 1.125rem;
+  color: rgb(34, 34, 34);
+  line-height: 22px;
+  margin-bottom: 7px;
+}
+#section-center .section-center-items .section-center-item p {
+  line-height: 24px;
+}
+
+/*-------------------------------------------
+#section-bottom
+-------------------------------------------*/
+#section-bottom {
+  background-color: #F7F7F7;
+  color: rgb(34, 34, 34);
+  margin-top: 90px;
+  /*-------------------------------------------
+  アコーディンオン(仮)
+  -------------------------------------------*/
+}
+#section-bottom .qusestion-answer {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+#section-bottom .qusestion-answer h2 {
+  width: 50%;
+  font-size: 2.5rem;
+  line-height: 44px;
+  padding-top: 32px;
+}
+#section-bottom .qusestion-answer .accordion {
+  width: 50%;
+}
+#section-bottom .qusestion-answer .accordion .accordion-item {
+  border-bottom: 1px solid #DDDDDD;
+  margin-bottom: 0;
+}
+#section-bottom .qusestion-answer .accordion .accordion-item:last-child {
+  border-bottom: none;
+}
+#section-bottom .qusestion-answer .accordion .accordion-item .accordion-button {
+  width: 100%;
+  text-align: left;
+  background-color: #F7F7F7;
+  font-size: 1.375rem;
+  line-height: 26px;
+  padding: 19px 0;
+  margin: 14px 0;
+  position: relative;
+}
+#section-bottom .qusestion-answer .accordion .accordion-item .accordion-button::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  right: 10px;
+  top: 50%;
+  border-top: solid 2px #222222;
+  border-right: solid 2px #222222;
+  transform: translateY(-100%) rotate(135deg);
+}
+#section-bottom .qusestion-answer .accordion .accordion-item .accordion-button::after:active {
+  transform: translateY(-50%) rotate(315deg);
+}
+#section-bottom .qusestion-answer .accordion .accordion-item .accordion-content {
+  background-color: #F7F7F7;
+  color: rgb(113, 113, 113);
+  font-size: 1.125rem;
+  line-height: 24px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  max-height: 0;
+}
+#section-bottom .other-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+}
+#section-bottom .other-question img {
+  width: 50%;
+  border-radius: 20px;
+}
+#section-bottom .other-question .little-question {
+  width: 50%;
+}
+
+/*-------------------------------------------
+#footer
+-------------------------------------------*/
+#footer {
+  background-color: #F7F7F7;
+  font-size: 0.875rem;
+}
+
+/*-------------------------------------------
+
+-------------------------------------------*/
 /* レスポンシブ・ブレークポイント1127px「タブレット用」
 ------------------------------- */
 /* レスポンシブ・ブレークポイント744px「スマホ用」
 ------------------------------- */
-/*-------------------------------------------
-
--------------------------------------------*/
-
-
 /* 基本スタイル */
 .responsive-text span {
   display: inline; /* デフォルトではインライン表示 */
 }
 
+/* ブレークポイントごとのスタイル調整 */
+@media (max-width: 1217px) {
+  .part2 {
+    display: block; /* 1217px以下でpart2をブロック表示に変更し、改行を入れる */
+  }
+}
+@media (max-width: 1087px) {
+  .part1, .part2, .part3 {
+    display: inline; /* 1087px以下では全てインライン表示に戻す */
+  }
+}
+@media (max-width: 443px) {
+  .part1 {
+    display: block; /* 443px以下でpart1をブロック表示に変更し、改行を入れる */
+  }
+}

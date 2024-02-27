@@ -7,16 +7,273 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- font-awesome -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- favicon
-        <link rel="icon" type="" href=""> -->
+    <!-- favicon -->
+        <link rel="icon" type="" href=""> 
     <!-- リセットCSS -->
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"/>
     <!-- CSS -->
         <link rel="stylesheet" href="./css/style.css">
+        
         <script src="script.js" defer></script>
     </head>
 
     <body>
-        
+        <div class="container">
+            <header id="header">
+                <div class="header-logo">
+                    <a href="#">Bircnc</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>Bircncでホスティングをはじめませんか？
+                        </li>
+                        <li><a href="#"  id="gradient-button">
+                            Bircncスタートツール</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header><!-- /header -->
+    
+            
+            <section id="section-top">
+                <div class="salary">
+                    <div class="inner">
+                        
+                    <h2 class="salary-title">
+                        <span>Bircncでホスティング。</span><br>
+                        <span>予⁠想ホ⁠ス⁠テ⁠ィ⁠ン⁠グ収⁠入⁠は</span>
+                    </h2>
+
+                    <div class="sliderContainer">
+                        <p id="priceText">¥ 20,170</p>
+                        <span id="nightCount">1泊あたりの予想ホスティング収入¥ 20,170で<a class="stay">1泊</a></span><br>                            
+                        <input type="range" min="1" max="30" value="1" id="nightSlider" class="slider">
+                    </div>
+
+                    <div class="calculation">
+                        <a href="">
+                            予想ホスティング収入額の計算方法を確認
+                        </a>
+                    </div>
+                    
+                    <button class="searchAdress">
+                        <svg class="searchBar" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="red"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                        <div class="addressNumberRooms">
+                            <span>Nishinomiya</span><br>
+                            <span>まるまる貸切·2寝室</span>
+                        </div>
+                        
+                    </button>
+
+                </div>
+                    </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22699.31805442301!2d135.3424916203411!3d34.75018119143258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f3bb53eb0659%3A0x4be154dba4915307!2z6Zai6KW_5a2m6Zmi5aSn5a2mIOilv-WuruS4iuOCseWOn-OCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1708924617300!5m2!1sja!2sjp" width="640" height="610" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section><!-- /section-top -->
+
+            <section id="section-center">
+                <h2>
+                    <span class="part1">Bircncスタートツールで手軽にホスティングを</span><br><!-- 
+                    --><span class="part2">はじめよう</span>                        
+                </h2>
+                <img src="images/987ccf2d-21dc-4c54-add7-31a35ded8557_11zon.png">
+                <div class="section-center-items">
+                    <div class="section-center-item">
+                        <h3  class="responsive-text">
+                            <span class="part1">スーパーホストが</span><!-- 
+                            --><span class="part2">1対1で</span><!--
+                            --><span class="part3">サ⁠ポ⁠ー⁠ト</span>
+                        </h3>
+                        <p>
+                            同じエリア内のスーパーホストとおつなぎします。基本的な質問から初めてのゲストの受け入れまで、電話やビデオ通話、チャットでサポートを受けられます。
+                        </p>
+                    </div>
+                    <div class="section-center-item">
+                        <h3  class="responsive-text">
+                            <span class="part1">Bircncで旅慣れたゲストを</span><!-- 
+                            --><span class="part2">対⁠象⁠と⁠し⁠た</span><!--
+                            --><span class="part3">初⁠め⁠て⁠の宿⁠泊⁠予⁠約</span>
+                        </h3>
+                        <p>
+                            最初の予約では、Bircncで3回以上予約宿泊をしたことがあり、ほかのホストからよい評価を得ているゲストを迎えることもできます。
+                        </p>
+                    </div>
+                    <div class="section-center-item">
+                        <h3  class="responsive-text">
+                            <span class="part1">ホスティング初心者の応援に</span><!-- 
+                            --><span class="part2">特化したBircncのサポート</span>
+                        </h3>
+                        <p>
+                            新規ホストは、アカウントの問題から請求に関するサポートまで、さまざまなことをお手伝いする専門のトレーニングを受けたコミュニティサポート担当者に、ワンクリックでお問い合わせいただけます。
+                        </p>
+                    </div>
+                </div>
+            </section><!-- /section-center -->
+        </div>
+             
+            <section id="section-bottom">
+                <div class="container2">
+                    <div class="qusestion-answer">
+                        <h2>
+                            みなさまの質問に<br>
+                            お答えします
+                        </h2>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <button class="accordion-button">
+                                掲載を検討中の自分のお⁠部⁠屋⁠/お家はBircnc向きでしょうか？                                
+                                 </button>
+                                <div class="accordion-content">
+                                <p>Bircncのゲストは、いろいろなお部屋に興味をお持ちです。また、Bircncのリスティングにはタイニーハウス、ログハウス、ツリーハウスなど、さまざまなタイプがあります。たとえ空き部屋でも、素晴らしい宿泊先になりえます。</p>
+                                </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <button class="accordion-button">
+                                    継続的にホスティングする必⁠要⁠はあ⁠り⁠ま⁠す⁠か⁠？
+                                </button>
+                                <div class="accordion-content">
+                                    <p>
+                                        そのような必要はまったくありません。ホストのみなさまは、ご自身のカレンダー設定を自由に管理できます。年に1回でもひと月に数泊程度でも、またはより頻繁なホスティングでも、ご自身で選んでいただけます。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 他のアコーディオン項目も同様に追加 -->
+    
+                            <div class="accordion-item">
+                                <button class="accordion-button">
+                                        ゲストとはどの程度や⁠り⁠取⁠りす⁠れ⁠ばよ⁠い⁠で⁠す⁠か⁠？
+                                </button>
+                                <div class="accordion-content">
+                                    <p>
+                                        ご自分次第です。ゲストのチェックイン時に短いひとことを送るなど、重要なタイミングにのみメッセージを送ることを好むホストもいれば、ゲストと直接会うことを楽しむホストもいます。ご自身とゲストに適したスタイルを見つけましょう。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 他のアコーディオン項目も同様に追加 -->
+    
+                            <div class="accordion-item">
+                                <button class="accordion-button">
+                                    素晴らしいBircncホストになるためのヒントはありますか？
+                                </button>
+                                <div class="accordion-content">
+                                <p>
+                                    基本をしっかり押さえることが大切です。お部屋を清潔に保ち、ゲストに迅速に対応し、清潔なタオルなど必要なアメニティ・設備を提供しましょう。ホストによっては、新鮮なお花を飾ったり、地元のおすすめスポットのリストを用意したりするなど、その人ならではのおもてなしを加える方もいますが、必要というわけではありません。                                    
+                                </p>
+                                <p>
+                                    <a href="#">ホスティングのヒントをもっと読む</a>
+                                </p>
+                                </div>
+                            </div>
+                            <!-- 他のアコーディオン項目も同様に追加 -->
+    
+                            <div class="accordion-item">
+                                <button class="accordion-button">
+                                    Bircncのサービス料とは？
+                                </button>
+                                <div class="accordion-content">
+                                <p>
+                                    Bircncのサービス料は通常、予約料金の小計の3%で、受取金の送金時に回収されます。また、予約時にゲストからも手数料が回収されます。Bircncは多くの地域で、売上税（消費税）や観光税の徴収・納付を自動的に代行しています。
+                                </p>
+                                <p>
+                                    <a href="#">手数料の詳細はこちら</a>
+                                </p>
+                                </div>
+                            </div>
+                            <!-- 他のアコーディオン項目も同様に追加 -->
+    
+                            <div class="accordion-item">
+                                <button class="accordion-button">
+                                    Bircncのホストとして、どのように守ってもらえますか？
+                                </button>
+                                <div class="accordion-content">
+                                <p>
+                                    日本では、すべての予約を対象に<a href="">日本ホスト保険</a>が適用され、追加料金はかかりません。ゲストの滞在中にリスティングが破損した場合、最大¥100,000,000の補償が適用される可能性があります。また、ゲストあるいは第三者が関わる財物破損・人身傷害に対して賠償責任や費用を負担する場合にも、補償が適用となる可能性があります。
+                                </p>
+                                <br>
+                                <p>
+                                    日本ホスト保険による支払いには一定の条件、制限、例外が適用されます。詳しくは、<a href="#">日本ホスト保険の概要ページをご確認ください。</a>
+                                </p>
+                                <br>
+                                <p>
+                                    なお、日本国外のすべてのホストは、<a href="#">ホストのためのAirCover</a>がお守りします。
+                                </p>
+                                </div>
+                            </div>
+                            <!-- 他のアコーディオン項目も同様に追加 -->
+                        </div><!-- /accordion -->
+                            
+                    </div>
+                    <div class="other-question">
+                        <img src="images/c19751e5-cd4f-41d0-898f-2580b60cae08_11zon.png">
+                        <div class="little-question">
+                            <h2>ほかにご⁠質⁠問⁠があ⁠り⁠ま⁠す⁠か⁠？</h2>
+                            <p>お近くの経験豊かなスーパーホストに答えてもらいましょう。</p>
+                            <a href="">スーパーホストに質問</a>
+                        </div>
+                    </div>  
+                </div>
+
+            </section><!-- /section-bottom -->            
+
+            <footer id="footer">
+                <div   class="container2">
+                    <div class="footer-top">
+                        <nav>
+                            <ul>
+                                <h3 class="footer-nav-title">サポート</h3>
+                                <li><a href="#">ヘルプセンター</a></li>
+                                <li><a href="#">AirCover</a></li>
+                                <li><a href="#">差別禁止</a></li>
+                                <li><a href="#">障害者向けサポート</a></li>
+                                <li><a href="#">キャンセルオプション</a></li>
+                                <li><a href="#">近隣トラブルを報告する</a></li>
+                            </ul>
+                            <ul>
+                                <h3 class="footer-nav-title">ホスティング</h3>
+                                <li><a href="#">Bircncにお部屋を掲載する</a></li>
+                                <li><a href="#">ホストのためのAirCover</a></li>
+                                <li><a href="#">ホスト向けリソース</a></li>
+                                <li><a href="#">コミュニティフォーラム</a></li>
+                                <li><a href="#">責任あるホスティングとは</a></li>
+                                <li><a href="#">無料のホスティングクラスに参加</a></li>
+                            </ul>
+                            <ul>
+                                <h3 class="footer-nav-title">Bircnc</h3>
+                                <li><a href="#">ニュースルーム</a></li>
+                                <li><a href="#">新機能のご紹介</a></li>
+                                <li><a href="#">採用情報</a></li>
+                                <li><a href="#">株主・投資家のみなさまへ</a></li>
+                                <li><a href="#">Bircncの緊急滞在先</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="footer-bottom-left">
+                            <div class="license">
+                                <a href="#">
+                                    Bircnc Global Services Limited<br>
+                                    観光庁長官(12)第S1234号(2050年1月22日-2100年1月11日)
+                                </a>
+                            </div>
+                            <ul>
+                                <li>© 2100 Bircnc, Inc.</li>
+                                <li><a href="#">プライバシー</a></li>
+                                <li><a href="#">利用規約</a></li>
+                                <li><a href="#">サイトマップ</a></li>
+                                <li><a href="#">企業情報</a></li>
+                            </ul>
+                        </div>
+                        <ul class="footer-bottom-right">
+                            <li><a href="">日本語 (JP)</a></li>
+                            <li><a href="">¥ JPY</a></li>
+                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                        </ul>                    
+                    </div>
+                </div>
+            </footer><!-- /footer -->            
     </body>
 </html>
