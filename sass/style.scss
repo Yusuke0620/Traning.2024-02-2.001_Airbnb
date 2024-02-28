@@ -37,11 +37,23 @@ a    { text-decoration: none; }
 /*-------------------------------------------
 #header
 -------------------------------------------*/
-#header {
-	background-color: #fff;
-	height: 80px;
-	color: $darkColor;
+
+
+.granHeader {	
+	position: fixed;
+	top: 0;	
+	width: 100%;
+	z-index: 100;
+	background-color: #fff ;
+}
+ #header  {
 	@include flexMode(space-between);
+	max-width: 1450px;
+	margin: 0 auto;
+	padding: 0 80px;
+	background-color: #fff ;
+	height: 80px;	
+	color: $darkColor;
 
 	.header-logo a {
 		font-size: 2rem;
@@ -57,13 +69,13 @@ a    { text-decoration: none; }
 		a {
 			display: inline-block;
 			font-size: 1.125rem;
-			color: #fff;
-			background-color: #E01761;
+			color: #fff ;
+			background-color: #E01761 ;
 			padding: 10px 23px;
 			margin-left: 24px;
 			border-radius: 8px;
 		
-			#gradient-button {
+		 #gradient -button {
 				transition: opacity 0.3s ease;
 				opacity: 1;
 			}
@@ -84,7 +96,7 @@ a    { text-decoration: none; }
 -------------------------------------------*/
 #section-top {
     @include flexMode(space-between);
-	margin-top: 85px;
+	margin-top: 165px;
 
     .salary, .map {
         width: 50%; // salaryとmapの幅をそれぞれ50%に設定
@@ -269,12 +281,14 @@ a    { text-decoration: none; }
 #section-bottom {
     background-color: #F7F7F7;
 	color: $darkColor;
+	padding-bottom: 80px;
 	margin-top: 90px;
+	border-bottom: 1px solid #DDDDDD;
 
 	.qusestion-answer {
 		display: flex;
 		justify-content: space-between;
-		padding: 80px 0;
+		padding: 80px 0 60px;
 
 		h2 {
 			width: 50%;
@@ -331,43 +345,142 @@ a    { text-decoration: none; }
 					overflow: hidden;
 					transition: max-height 0.3s ease-out;
 					max-height: 0;
+
+					a {
+						text-decoration: underline;
+						font-size: 1.125rem;
+						font-weight: 600;
+						color: #000;
+					}
 				}
 			}
 		}
 	}
-
-	/*-------------------------------------------
-アコーディンオン(仮)
--------------------------------------------*/
-.accordion {    
-    .accordion-content {
-    }
-  }
-
-
-	.other-question {
-		@include flexMode(space-between);
-		background-color: #fff;
-		border-radius: 20px;
-
-		img {
-			width: 50%;
-			border-radius: 20px;
-		}
-
-		.little-question {
-			width: 50%;					
-		}
-	}
-
 }
 /*-------------------------------------------
 #footer
 -------------------------------------------*/
 #footer {
-    background-color: #F7F7F7;
-    font-size: 0.875rem;
+	background-color: #F7F7F7;
+	font-size: 0.875rem;
+	padding: 50px 0 110px;
+	
+	.footer-top {
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
+		border-bottom: 1px solid #DDDDDD;
+		padding-bottom: 50px;
+
+		nav {
+			width: 50%;
+			
+			.footer-nav-title {
+				color: $darkColor;
+				font-weight: 600;
+				line-height: 18px;
+			}
+			li {
+				font-weight: 400;
+				line-height: 18px;
+				margin-top: 15px
+			}
+		}
+	}
+
+	.footer-bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
+		padding-top: 25px;
+
+		.footer-bottom-left {
+			ul {
+				li:not(:first-child)::before {
+					content: "\2022"; /* ブラウザが表示する点のUnicodeコード */
+					margin-right: 0.5em; /* 点とテキストの間隔 */
+					font-size: 0.4em; /* 点のサイズを小さくする */
+					vertical-align: middle; /* 縦方向の中央揃え */
+					margin: 0 10px;
+				}
+			}
+		}		
+		ul {
+			@include flexMode(space-between);
+			color: $darkColor;
+		}
+		.footer-bottom-right {
+			color: $darkColor;
+			font-weight: 600;
+			list-style: none;
+			li {
+				margin-right: 20px;
+			}
+			.fa-globe {
+				margin-right: 10px;
+			}
+
+		}
+	}
+
+	a {
+		color: $darkColor;
+		&:hover {
+			text-decoration: underline;
+		}
+		
+	}
 }
+
+
+
+/*-------------------------------------------
+アコーディンオン(仮)
+-------------------------------------------*/
+.other-question {
+	@include flexMode(space-between);
+	background-color: #fff;
+	border-radius: 20px;
+
+	img {
+		width: 45%;
+		border-radius: 20px;
+	}
+
+	.little-question {
+		width: 50%;	
+		
+		h2 {
+			font-size: 2.5rem;
+			line-height: 40px;
+			font-weight: 600;
+		}
+		p {
+			font-size: 1.125rem;
+			line-height: 24px;
+			color: $lightColor;
+			margin-top: 20px;
+		}
+		a {
+			display: inline-block;
+			color: $darkColor;
+			font-size: 0.875rem;
+			font-weight: 600;
+			line-height: 18px;
+			border: 1px solid $darkColor;
+			border-radius: 10px;
+			padding: 10px 20px;
+			margin-top: 23px;
+			
+			&:hover {
+				background-color: rgba(179, 179, 179, 0.1);
+			}
+		}
+	}
+}
+
+
+
 /*-------------------------------------------
 
 -------------------------------------------*/
